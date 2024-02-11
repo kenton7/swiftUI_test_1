@@ -9,7 +9,16 @@ import SwiftUI
 
 struct SecondTab: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List {
+                ForEach(0..<20) { item in
+                    NavigationLink(destination: SomeDestinationView(rowID: item)) {
+                        Text("\(item)")
+                    }
+                }
+            }
+            .navigationTitle("Второй таб")
+        }
     }
 }
 
