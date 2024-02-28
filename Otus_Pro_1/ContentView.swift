@@ -17,7 +17,6 @@ struct ContentView: View {
     }
     
     var body: some View {
-        ZStack {
             TabView(selection: $selectedIndex) {
                 NavigationStack {
                     VStack {
@@ -35,27 +34,31 @@ struct ContentView: View {
                 }
                 .font(.system(size: 30, design: .rounded)).bold()
                 .tabItem {
-                    Image(systemName: "1.circle")
-                    Text("Первый").font(.system(size: 20, design: .rounded)).tint(.black)
+                    Label(
+                        title: { Text("Первый") },
+                        icon: { Image(systemName: "1.circle") }
+                    )
                 }.tag(0)
                 
                 //MARK: - Second Tab
                 SecondTab()
                     .tabItem {
-                        Image(systemName: "2.circle")
-                        Text("Второй").font(.system(size: 20, design: .rounded)).tint(.black)
+                        Label(
+                            title: { Text("Второй") },
+                            icon: { Image(systemName: "2.circle") }
+                        )
                     }.tag(1)
                 
                 //MARK: - Third tab
                 ThirdTab()
-                    .font(.system(size: 30, design: .rounded)).bold()
                     .tabItem {
-                        Image(systemName: "3.circle")
-                        Text("Третий").font(.system(size: 20, design: .rounded)).tint(.black)
+                        Label(
+                            title: { Text("Третий") },
+                            icon: { Image(systemName: "3.circle") }
+                        )
                     }.tag(2)
             }
         }
-    }
 }
 
 #Preview {

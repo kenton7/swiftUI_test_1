@@ -26,32 +26,6 @@ struct ThirdTab: View {
     }
 }
 
-struct ModalView: View {
-    
-    @Environment(\.dismiss) var dismiss
-    
-    var body: some View {
-        ZStack {
-            Color.red.ignoresSafeArea()
-            VStack {
-                HStack {
-                    Spacer()
-                    Button(action: {
-                        dismiss()
-                    }, label: {
-                        Image(systemName: "xmark.circle.fill")
-                            .foregroundStyle(.white)
-                            .font(.system(size: 40))
-                            .padding()
-                    })
-                }
-                Spacer()
-            }
-            Text("Модальное окно").font(.largeTitle)
-        }
-    }
-}
-
 #Preview {
     ThirdTab()
 }

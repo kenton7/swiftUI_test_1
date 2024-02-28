@@ -15,6 +15,7 @@
 		09F7E13B2B76A5C4000A2C68 /* SomeDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F7E13A2B76A5C4000A2C68 /* SomeDestinationView.swift */; };
 		09F7E13D2B76A688000A2C68 /* ThirdTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F7E13C2B76A688000A2C68 /* ThirdTab.swift */; };
 		09F7E17B2B78CB9B000A2C68 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F7E17A2B78CB9B000A2C68 /* ActivityView.swift */; };
+		09F7E2322B8F09E4000A2C68 /* ModalScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F7E2312B8F09E4000A2C68 /* ModalScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		09F7E13A2B76A5C4000A2C68 /* SomeDestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeDestinationView.swift; sourceTree = "<group>"; };
 		09F7E13C2B76A688000A2C68 /* ThirdTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTab.swift; sourceTree = "<group>"; };
 		09F7E17A2B78CB9B000A2C68 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		09F7E2312B8F09E4000A2C68 /* ModalScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				09F7E13A2B76A5C4000A2C68 /* SomeDestinationView.swift */,
 				09F7E13C2B76A688000A2C68 /* ThirdTab.swift */,
 				09F7E17A2B78CB9B000A2C68 /* ActivityView.swift */,
+				09F7E2312B8F09E4000A2C68 /* ModalScreen.swift */,
 			);
 			path = Otus_Pro_1;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F7E2322B8F09E4000A2C68 /* ModalScreen.swift in Sources */,
 				09F7E12D2B76A152000A2C68 /* ContentView.swift in Sources */,
 				09F7E13D2B76A688000A2C68 /* ThirdTab.swift in Sources */,
 				09F7E13B2B76A5C4000A2C68 /* SomeDestinationView.swift in Sources */,
