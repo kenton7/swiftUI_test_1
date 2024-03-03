@@ -20,13 +20,16 @@ struct ContentView: View {
             TabView(selection: $selectedIndex) {
                 NavigationStack {
                     VStack {
-                        NavigationLink(destination: SomeDestinationView(rowID: Int.random(in: 0..<20))) {
+                        Button(action: {
+                            selectedIndex = 1
+                            showSecondTabAndRandomRow.toggle()
+                        }, label: {
                             Text("Открыть второй таб и рандомную ячейку")
-                                .padding()
-                                .background(Color.cyan)
-                                .foregroundStyle(.white)
-                                .clipShape(RoundedRectangle(cornerRadius: 20))
-                        }
+                                .font(.system(size: 30, design: .rounded))
+                        }).buttonStyle(.borderedProminent)
+                            .sheet(isPresented: $showSecondTabAndRandomRow, content: {
+                                SomeDestinationView(rowID: Int.random(in: 0..<20))
+                            })
                     }
                 }
                 .font(.system(size: 30, design: .rounded)).bold()
