@@ -27,7 +27,7 @@ struct ContentView: View {
                             Text("Открыть второй таб и рандомную ячейку")
                                 .font(.system(size: 30, design: .rounded))
                         }).buttonStyle(.borderedProminent)
-                            .sheet(isPresented: $showSecondTabAndRandomRow, content: {
+                            .fullScreenCover(isPresented: $showSecondTabAndRandomRow, content: {
                                 SomeDestinationView(rowID: Int.random(in: 0..<20))
                             })
                     }
